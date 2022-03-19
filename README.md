@@ -29,7 +29,6 @@ To get a local copy up and running follow these simple example steps.
 
 ## Installation
 * Ruby
-* JSON gem
 * Rspec gem
 
 ## Using it Locally
