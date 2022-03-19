@@ -10,4 +10,12 @@ class Solver
     reverse_word.times { |i| word[i], word[-i - 1] = word[-i - 1], word[i] }
     word
   end
+
+  def fizzbuzz(num)
+    return 'fizzbuzz' if (num % 15).zero?
+    return 'fizz' if (num % 3).zero?
+    return 'buzz' if (num % 5).zero?
+
+    num.to_s
+  end
 end
