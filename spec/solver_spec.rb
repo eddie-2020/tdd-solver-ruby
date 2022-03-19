@@ -20,4 +20,22 @@ describe Solver do
       expect(solver.reverse('onomatopoeia')).to eq 'aieopotamono'
     end
   end
+
+  context 'Test the fizzbuzz method in the solver class' do
+    it 'should return fizz, when n is divisible by 3' do
+      expect(solver.fizzbuzz(3)).to eq 'fizz'
+    end
+
+    it 'should return buzz, when n is divisible by 5' do
+      expect(solver.fizzbuzz(5)).to eq 'buzz'
+    end
+
+    it 'should return fizzbuzz, when n is divisible by 3 and 5' do
+      expect(solver.fizzbuzz(15)).to eq 'fizzbuzz'
+    end
+
+    it 'should return n, as a string in any other case' do
+      expect(solver.fizzbuzz(7)).to eq '7'
+    end
+  end
 end
