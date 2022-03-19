@@ -14,5 +14,10 @@ describe Solver do
     end
   end
 
-  context 'Test'
+  context 'Test reverse method in solver class' do
+    it 'should reverse any word given to it' do
+      expect(solver.reverse('hello')).to eq 'olleh'
+      expect(solver.reverse('onomatopoeia')).to eq 'aieopotamono'
+    end
+  end
 end
